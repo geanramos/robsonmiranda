@@ -3,65 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo de Robson Nascimento Miranda</title>
+    <title>Currículo - Robson Nascimento Miranda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
             background-color: #f4f4f4;
+            padding: 35px 0;
         }
         .container {
             max-width: 550px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #333;
-        }
-        .download-button {
-            display: block;
             width: 100%;
-            padding: 10px 0;
-            background-color: #007bff;
-            color: white;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
+        }
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            object-fit: cover;
+            margin-top: -50px;
+            border: 3px solid white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 24px;
+            margin: 15px 0;
+        }
+        .download-btn {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
-            margin-top: 20px;
+            margin-bottom: 20px;
         }
-        p {
-            line-height: 1.6;
+        .content {
+            text-align: left;
+        }
+        .content ul {
+            padding-left: 30px;
+        }
+        footer {
+            margin-top: 10px;
+            font-size: 14px;
+            color: gray;
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <img src="avatar.jpg" alt="Foto de Perfil" class="avatar"><br><br>
+        <a href="curriculo.pdf" class="download-btn" download>Baixar PDF</a>
         <h1>Robson Nascimento Miranda</h1>
-        <p><strong>Endereço:</strong> Alameda da Delegacia, 720 - Castanhal</p>
-        <p><strong>Telefone:</strong> (91) 99161-5689</p>
-        <p><strong>E-mail:</strong> mirandarobison52@gmail.com</p>
-
-        <h2>Objetivo Profissional</h2>
-        <p>Profissional com vasta experiência em construção civil, jardinagem, paisagismo, segurança patrimonial e serviços de oficina mecânica, buscando novas oportunidades para aplicar e expandir minhas habilidades.</p>
-
-        <h2>Experiência Profissional</h2>
-        <p><strong>Construção Civil:</strong> Ajudante, Servente</p>
-        <p><strong>Jardinagem e Roçagem:</strong> Operador de Máquina Roçadeira</p>
-        <p><strong>Paisagismo:</strong> Planejamento e execução de projetos paisagísticos</p>
-        <p><strong>Segurança Patrimonial:</strong> Caseiro</p>
-        <p><strong>Oficinas Mecânicas:</strong> Pintura Automotiva, Lanternagem, Funilaria, Soldador</p>
-        <p><strong>Pintura Residencial:</strong> Preparação de superfícies para pintura</p>
-
-        <h2>Habilidades</h2>
-        <p>Construção civil, jardinagem, paisagismo, segurança patrimonial, oficinas mecânicas, pintura residencial, trabalho em equipe, responsabilidade, proatividade.</p>
-
-        <h2>Formação Acadêmica</h2>
-        <p>8ª série do Ensino Fundamental</p>
-
-        <a href="curriculo.pdf" class="download-button" download>Baixar Currículo em PDF</a>
+        <div class="content">
+            <p><strong>Objetivo Profissional:</strong><br> Profissional com vasta experiência em construção civil, jardinagem, paisagismo, segurança patrimonial e serviços de oficina mecânica.</p>
+            <p><strong>Formação:</strong><br> 8ª série do Ensino Fundamental</p>
+            <p><strong>Experiência Profissional:</strong></p>
+            <ul>
+                <li>Construção Civil: Ajudante, Servente</li>
+                <li>Jardinagem e Roçagem: Operador de Máquina Roçadeira</li>
+                <li>Paisagismo, Segurança Patrimonial</li>
+                <li>Oficinas Mecânicas: Pintura, Lanternagem, Funilaria, Soldador</li>
+                <li>Pintura Residencial</li>
+            </ul>
+        </div>
+        <footer>&copy; 2025 - Robson Nascimento Miranda</footer>
     </div>
 </body>
 </html>
